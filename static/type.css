@@ -1,0 +1,13 @@
+/* T Y P E */
+form{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 50px;
+    z-index: 99;
+    background: #eee;
+    border: none;
+    outline: none;
+}
