@@ -4,6 +4,8 @@
     <title>Flask_Chat_App</title>
     <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='type.css') }}" />
     <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='button.css') }}" />
+     <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='messages.css') }}" />
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='forChat.css') }}" />
     <script src="{{ url_for('static', filename='button.js') }}"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
@@ -19,7 +21,7 @@
     <input type="text" class="username" placeholder="User Name"/>
     <input type="text" class="message" placeholder="Messages"/>
     <div class="wrapper">
-        <button class="">
+        <button class="send">
             <input type="submit"/>
             <div class="success">
                  <span>Submit</span>
@@ -33,7 +35,6 @@
 
 </form>
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.min.js"></script>
 <script type="text/javascript">
